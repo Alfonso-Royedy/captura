@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=decive-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Captura de pedido</title>
+    <link rel="stylesheet" href="stylos/style.css">
+</head>
+
+<body>
+    <
+    <form action="#" class="formulario">
+
+        <h1 class="Titulo">BIENVENIDO</h1>
+        <h2 class="Subtitulo">Capture su pedido</h2>
+        <p class="text">-------------------------------</p>
+
+            <label for="cliente" class="form_label">¿Cual es tu Nombre?</label>
+            <input id="cliente" type="text" class="form_input" placeholder="Ingrese su Nombre" required>
+
+            <label for="fecha" class="form_label">Indica la fecha de tu orden</label>
+            <input id="fecha" type="date" class="form_input" placeholder="Ingrese una fecha" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+
+            <label for="hora" class="form_label">Indica la hora de tu orden</label>
+            <input id="hora" type="time" class="form_input" min="07:00" max="21:00" step="3600" placeholder="Seleccione la hora" required>
+
+            <label for="Menu_selec" class="form_label">Seleccione su producto:</label>
+            <select id="Menu_selec" name="lista_menu" class="form_input">
+                <option value="Hamburguesa">Ninguno</option>
+                <option value="Hamburguesa">Hamburguesa</option>
+                <option value="tranca_carnita">Tranca de carnita</option>
+                <option value="Hotdog">Hot Dog</option>
+            </select>
+
+            <label for="Menu_selec2" class="form_label">Seleccione su producto:</label>
+            <select id="Menu_selec2" name="lista_menu" class="form_input">
+                <option value="Hamburguesa">Ninguno</option>
+                <option value="Hamburguesa">Hamburguesa</option>
+                <option value="tranca_carnita">Tranca de carnita</option>
+                <option value="Hotdog">Hot Dog</option>
+            </select>
+
+            <label for="Menu_selec3" class="form_label">Seleccione su producto:</label>
+            <select id="Menu_selec3" name="lista_menu" class="form_input">
+                <option value="Hamburguesa">Ninguno</option>
+                <option value="Hamburguesa">Hamburguesa</option>
+                <option value="tranca_carnita">Tranca de carnita</option>
+                <option value="Hotdog">Hot Dog</option>
+            </select>
+
+            <button id="submit" class="form_submit">Enviar pedido al whatsapp</button>
+    </form>
+
+    <script src="GDP.JS"></script>
+
+</body>
+
+</html>
